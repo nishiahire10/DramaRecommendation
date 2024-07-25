@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F2B83132C5282D300CD6947 /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B83122C5282D200CD6947 /* RecommendationView.swift */; };
+		3F2B83152C5282E100CD6947 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B83142C5282E100CD6947 /* ReviewView.swift */; };
+		3F2B83172C529CEF00CD6947 /* DramaCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B83162C529CEF00CD6947 /* DramaCellView.swift */; };
+		3F2B831C2C52C13400CD6947 /* RecommendationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B831B2C52C13400CD6947 /* RecommendationModel.swift */; };
+		3F2B831E2C52C2BE00CD6947 /* ReviewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B831D2C52C2BE00CD6947 /* ReviewsModel.swift */; };
+		3F2B83202C52C3D000CD6947 /* RecommendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B831F2C52C3D000CD6947 /* RecommendationsViewModel.swift */; };
+		3F2B83222C52C3E600CD6947 /* ReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B83212C52C3E600CD6947 /* ReviewsViewModel.swift */; };
+		3F2B83242C52C3FE00CD6947 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B83232C52C3FE00CD6947 /* WebService.swift */; };
+		3FD25C342C5280980049582F /* DramaDramaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C332C5280980049582F /* DramaDramaApp.swift */; };
+		3FD25C362C5280980049582F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C352C5280980049582F /* ContentView.swift */; };
+		3FD25C382C52809C0049582F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD25C372C52809C0049582F /* Assets.xcassets */; };
+		3FD25C3B2C52809C0049582F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD25C3A2C52809C0049582F /* Preview Assets.xcassets */; };
+		3FD25C452C52809D0049582F /* DramaDramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C442C52809D0049582F /* DramaDramaTests.swift */; };
+		3FD25C4F2C52809D0049582F /* DramaDramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C4E2C52809D0049582F /* DramaDramaUITests.swift */; };
+		3FD25C512C52809D0049582F /* DramaDramaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C502C52809D0049582F /* DramaDramaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FD25C412C52809D0049582F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD25C282C5280980049582F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FD25C2F2C5280980049582F;
+			remoteInfo = DramaDrama;
+		};
+		3FD25C4B2C52809D0049582F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD25C282C5280980049582F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FD25C2F2C5280980049582F;
+			remoteInfo = DramaDrama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F2B83122C5282D200CD6947 /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
+		3F2B83142C5282E100CD6947 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		3F2B83162C529CEF00CD6947 /* DramaCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaCellView.swift; sourceTree = "<group>"; };
+		3F2B831B2C52C13400CD6947 /* RecommendationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationModel.swift; sourceTree = "<group>"; };
+		3F2B831D2C52C2BE00CD6947 /* ReviewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsModel.swift; sourceTree = "<group>"; };
+		3F2B831F2C52C3D000CD6947 /* RecommendationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewModel.swift; sourceTree = "<group>"; };
+		3F2B83212C52C3E600CD6947 /* ReviewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewModel.swift; sourceTree = "<group>"; };
+		3F2B83232C52C3FE00CD6947 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		3FD25C302C5280980049582F /* DramaDrama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DramaDrama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD25C332C5280980049582F /* DramaDramaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaDramaApp.swift; sourceTree = "<group>"; };
+		3FD25C352C5280980049582F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FD25C372C52809C0049582F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FD25C3A2C52809C0049582F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FD25C402C52809D0049582F /* DramaDramaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DramaDramaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD25C442C52809D0049582F /* DramaDramaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaDramaTests.swift; sourceTree = "<group>"; };
+		3FD25C4A2C52809D0049582F /* DramaDramaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DramaDramaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD25C4E2C52809D0049582F /* DramaDramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaDramaUITests.swift; sourceTree = "<group>"; };
+		3FD25C502C52809D0049582F /* DramaDramaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaDramaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FD25C2D2C5280980049582F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD25C3D2C52809D0049582F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD25C472C52809D0049582F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F2B83182C52C07B00CD6947 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3F2B831F2C52C3D000CD6947 /* RecommendationsViewModel.swift */,
+				3F2B83212C52C3E600CD6947 /* ReviewsViewModel.swift */,
+				3F2B83232C52C3FE00CD6947 /* WebService.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F2B83192C52C0A200CD6947 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3F2B83122C5282D200CD6947 /* RecommendationView.swift */,
+				3F2B83142C5282E100CD6947 /* ReviewView.swift */,
+				3FD25C352C5280980049582F /* ContentView.swift */,
+				3F2B83162C529CEF00CD6947 /* DramaCellView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3F2B831A2C52C0F300CD6947 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F2B831B2C52C13400CD6947 /* RecommendationModel.swift */,
+				3F2B831D2C52C2BE00CD6947 /* ReviewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FD25C272C5280980049582F = {
+			isa = PBXGroup;
+			children = (
+				3FD25C322C5280980049582F /* DramaDrama */,
+				3FD25C432C52809D0049582F /* DramaDramaTests */,
+				3FD25C4D2C52809D0049582F /* DramaDramaUITests */,
+				3FD25C312C5280980049582F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FD25C312C5280980049582F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FD25C302C5280980049582F /* DramaDrama.app */,
+				3FD25C402C52809D0049582F /* DramaDramaTests.xctest */,
+				3FD25C4A2C52809D0049582F /* DramaDramaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FD25C322C5280980049582F /* DramaDrama */ = {
+			isa = PBXGroup;
+			children = (
+				3FD25C332C5280980049582F /* DramaDramaApp.swift */,
+				3F2B83192C52C0A200CD6947 /* UI */,
+				3F2B831A2C52C0F300CD6947 /* Model */,
+				3F2B83182C52C07B00CD6947 /* ViewModel */,
+				3FD25C372C52809C0049582F /* Assets.xcassets */,
+				3FD25C392C52809C0049582F /* Preview Content */,
+			);
+			path = DramaDrama;
+			sourceTree = "<group>";
+		};
+		3FD25C392C52809C0049582F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3FD25C3A2C52809C0049582F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FD25C432C52809D0049582F /* DramaDramaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FD25C442C52809D0049582F /* DramaDramaTests.swift */,
+			);
+			path = DramaDramaTests;
+			sourceTree = "<group>";
+		};
+		3FD25C4D2C52809D0049582F /* DramaDramaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FD25C4E2C52809D0049582F /* DramaDramaUITests.swift */,
+				3FD25C502C52809D0049582F /* DramaDramaUITestsLaunchTests.swift */,
+			);
+			path = DramaDramaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FD25C2F2C5280980049582F /* DramaDrama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FD25C542C52809D0049582F /* Build configuration list for PBXNativeTarget "DramaDrama" */;
+			buildPhases = (
+				3FD25C2C2C5280980049582F /* Sources */,
+				3FD25C2D2C5280980049582F /* Frameworks */,
+				3FD25C2E2C5280980049582F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DramaDrama;
+			productName = DramaDrama;
+			productReference = 3FD25C302C5280980049582F /* DramaDrama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FD25C3F2C52809D0049582F /* DramaDramaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FD25C572C52809D0049582F /* Build configuration list for PBXNativeTarget "DramaDramaTests" */;
+			buildPhases = (
+				3FD25C3C2C52809D0049582F /* Sources */,
+				3FD25C3D2C52809D0049582F /* Frameworks */,
+				3FD25C3E2C52809D0049582F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FD25C422C52809D0049582F /* PBXTargetDependency */,
+			);
+			name = DramaDramaTests;
+			productName = DramaDramaTests;
+			productReference = 3FD25C402C52809D0049582F /* DramaDramaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FD25C492C52809D0049582F /* DramaDramaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FD25C5A2C52809D0049582F /* Build configuration list for PBXNativeTarget "DramaDramaUITests" */;
+			buildPhases = (
+				3FD25C462C52809D0049582F /* Sources */,
+				3FD25C472C52809D0049582F /* Frameworks */,
+				3FD25C482C52809D0049582F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FD25C4C2C52809D0049582F /* PBXTargetDependency */,
+			);
+			name = DramaDramaUITests;
+			productName = DramaDramaUITests;
+			productReference = 3FD25C4A2C52809D0049582F /* DramaDramaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FD25C282C5280980049582F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3FD25C2F2C5280980049582F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					3FD25C3F2C52809D0049582F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3FD25C2F2C5280980049582F;
+					};
+					3FD25C492C52809D0049582F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3FD25C2F2C5280980049582F;
+					};
+				};
+			};
+			buildConfigurationList = 3FD25C2B2C5280980049582F /* Build configuration list for PBXProject "DramaDrama" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FD25C272C5280980049582F;
+			productRefGroup = 3FD25C312C5280980049582F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FD25C2F2C5280980049582F /* DramaDrama */,
+				3FD25C3F2C52809D0049582F /* DramaDramaTests */,
+				3FD25C492C52809D0049582F /* DramaDramaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FD25C2E2C5280980049582F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD25C3B2C52809C0049582F /* Preview Assets.xcassets in Resources */,
+				3FD25C382C52809C0049582F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD25C3E2C52809D0049582F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD25C482C52809D0049582F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FD25C2C2C5280980049582F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2B83152C5282E100CD6947 /* ReviewView.swift in Sources */,
+				3F2B83172C529CEF00CD6947 /* DramaCellView.swift in Sources */,
+				3FD25C362C5280980049582F /* ContentView.swift in Sources */,
+				3FD25C342C5280980049582F /* DramaDramaApp.swift in Sources */,
+				3F2B831E2C52C2BE00CD6947 /* ReviewsModel.swift in Sources */,
+				3F2B83222C52C3E600CD6947 /* ReviewsViewModel.swift in Sources */,
+				3F2B83202C52C3D000CD6947 /* RecommendationsViewModel.swift in Sources */,
+				3F2B831C2C52C13400CD6947 /* RecommendationModel.swift in Sources */,
+				3F2B83242C52C3FE00CD6947 /* WebService.swift in Sources */,
+				3F2B83132C5282D300CD6947 /* RecommendationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD25C3C2C52809D0049582F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD25C452C52809D0049582F /* DramaDramaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD25C462C52809D0049582F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD25C512C52809D0049582F /* DramaDramaUITestsLaunchTests.swift in Sources */,
+				3FD25C4F2C52809D0049582F /* DramaDramaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FD25C422C52809D0049582F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FD25C2F2C5280980049582F /* DramaDrama */;
+			targetProxy = 3FD25C412C52809D0049582F /* PBXContainerItemProxy */;
+		};
+		3FD25C4C2C52809D0049582F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FD25C2F2C5280980049582F /* DramaDrama */;
+			targetProxy = 3FD25C4B2C52809D0049582F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FD25C522C52809D0049582F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FD25C532C52809D0049582F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FD25C552C52809D0049582F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DramaDrama/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nishi.DramaDrama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FD25C562C52809D0049582F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DramaDrama/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nishi.DramaDrama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FD25C582C52809D0049582F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nishi.DramaDramaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DramaDrama.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DramaDrama";
+			};
+			name = Debug;
+		};
+		3FD25C592C52809D0049582F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nishi.DramaDramaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DramaDrama.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DramaDrama";
+			};
+			name = Release;
+		};
+		3FD25C5B2C52809D0049582F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nishi.DramaDramaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DramaDrama;
+			};
+			name = Debug;
+		};
+		3FD25C5C2C52809D0049582F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nishi.DramaDramaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DramaDrama;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FD25C2B2C5280980049582F /* Build configuration list for PBXProject "DramaDrama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD25C522C52809D0049582F /* Debug */,
+				3FD25C532C52809D0049582F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FD25C542C52809D0049582F /* Build configuration list for PBXNativeTarget "DramaDrama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD25C552C52809D0049582F /* Debug */,
+				3FD25C562C52809D0049582F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FD25C572C52809D0049582F /* Build configuration list for PBXNativeTarget "DramaDramaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD25C582C52809D0049582F /* Debug */,
+				3FD25C592C52809D0049582F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FD25C5A2C52809D0049582F /* Build configuration list for PBXNativeTarget "DramaDramaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD25C5B2C52809D0049582F /* Debug */,
+				3FD25C5C2C52809D0049582F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FD25C282C5280980049582F /* Project object */;
+}
