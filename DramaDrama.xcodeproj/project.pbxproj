@@ -15,6 +15,7 @@
 		3F2B83202C52C3D000CD6947 /* RecommendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B831F2C52C3D000CD6947 /* RecommendationsViewModel.swift */; };
 		3F2B83222C52C3E600CD6947 /* ReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B83212C52C3E600CD6947 /* ReviewsViewModel.swift */; };
 		3F2B83242C52C3FE00CD6947 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B83232C52C3FE00CD6947 /* WebService.swift */; };
+		3F772AEF2C53D9A800AAFA30 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F772AEE2C53D9A800AAFA30 /* ErrorHandler.swift */; };
 		3FD25C342C5280980049582F /* DramaDramaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C332C5280980049582F /* DramaDramaApp.swift */; };
 		3FD25C362C5280980049582F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C352C5280980049582F /* ContentView.swift */; };
 		3FD25C382C52809C0049582F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD25C372C52809C0049582F /* Assets.xcassets */; };
@@ -50,6 +51,8 @@
 		3F2B831F2C52C3D000CD6947 /* RecommendationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewModel.swift; sourceTree = "<group>"; };
 		3F2B83212C52C3E600CD6947 /* ReviewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewModel.swift; sourceTree = "<group>"; };
 		3F2B83232C52C3FE00CD6947 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		3F772AEE2C53D9A800AAFA30 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		3F82E9C02C53D2110096C765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3FD25C302C5280980049582F /* DramaDrama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DramaDrama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD25C332C5280980049582F /* DramaDramaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaDramaApp.swift; sourceTree = "<group>"; };
 		3FD25C352C5280980049582F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 				3F2B831F2C52C3D000CD6947 /* RecommendationsViewModel.swift */,
 				3F2B83212C52C3E600CD6947 /* ReviewsViewModel.swift */,
 				3F2B83232C52C3FE00CD6947 /* WebService.swift */,
+				3F772AEE2C53D9A800AAFA30 /* ErrorHandler.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -140,6 +144,7 @@
 		3FD25C322C5280980049582F /* DramaDrama */ = {
 			isa = PBXGroup;
 			children = (
+				3F82E9C02C53D2110096C765 /* Info.plist */,
 				3FD25C332C5280980049582F /* DramaDramaApp.swift */,
 				3F2B83192C52C0A200CD6947 /* UI */,
 				3F2B831A2C52C0F300CD6947 /* Model */,
@@ -309,6 +314,7 @@
 				3F2B83172C529CEF00CD6947 /* DramaCellView.swift in Sources */,
 				3FD25C362C5280980049582F /* ContentView.swift in Sources */,
 				3FD25C342C5280980049582F /* DramaDramaApp.swift in Sources */,
+				3F772AEF2C53D9A800AAFA30 /* ErrorHandler.swift in Sources */,
 				3F2B831E2C52C2BE00CD6947 /* ReviewsModel.swift in Sources */,
 				3F2B83222C52C3E600CD6947 /* ReviewsViewModel.swift in Sources */,
 				3F2B83202C52C3D000CD6947 /* RecommendationsViewModel.swift in Sources */,
@@ -475,7 +481,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DramaDrama/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = DramaDrama/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -503,7 +509,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DramaDrama/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = DramaDrama/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
