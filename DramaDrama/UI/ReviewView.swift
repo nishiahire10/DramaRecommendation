@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ReviewView: View {
     @State private var selectedSegment = 0
-    let segments = ["Recent","Best", "Shows", "Movies"]
+    let segments = ["Recent", "Best", "Shows", "Movies"]
+    @ObservedObject var viewModel = ReviewsViewModel()
+    @State var category : String = "recent"
+    
     var body: some View {
         VStack {
             Picker("Segments", selection: $selectedSegment) {
@@ -19,19 +22,34 @@ struct ReviewView: View {
             }
             .pickerStyle(.segmented)
             .padding()
-            List {
-                ForEach(0..<20) { index in
-                   DramaCellView()
-                }
+            .onChange(of: selectedSegment) { newValue in
+                updateCategory()
+                viewModel.getReviewsData(category)
             }
-            if selectedSegment == 0 {
-                
-            } else {
-                
+            List(viewModel.reviewsData, id: \.id) { review in
+                DramaCellView(urlstr: review.item?.poster_url ?? "", titleStr: review.item?.title ?? "")
             }
         }
         .navigationBarTitle("Drama")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            viewModel.getReviewsData(category)
+        }
+    }
+    
+    func updateCategory() {
+        switch selectedSegment {
+        case 0:
+            category = "recent"
+        case 1:
+            category = "best"
+        case 2:
+            category = "shows"
+        case 3:
+            category = "movies"
+        default:
+            category = "recent"
+        }
     }
     
 }
