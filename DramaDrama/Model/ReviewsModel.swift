@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Reviews : Codable, Identifiable {
+struct Reviews : Codable, Identifiable, Equatable {
+    static func == (lhs: Reviews, rhs: Reviews) -> Bool {
+        lhs.item == rhs.item
+    }
+    
     var id: UUID = UUID()
     var item : ReviewsItem?
     var user : User?
@@ -18,6 +22,15 @@ struct Reviews : Codable, Identifiable {
     
     enum CodingKeys : CodingKey {
         case item, user, helpful_votes, title, text, rating
+    }
+    
+    init(item : ReviewsItem, user: User, helpful_votes: Int, title: String, text: String, rating: Rating) {
+        self.item = item
+        self.user = user
+        self.helpful_votes = helpful_votes
+        self.title = title
+        self.text = text
+        self.rating = rating
     }
     
     init(from decoder: Decoder) throws {
@@ -31,7 +44,7 @@ struct Reviews : Codable, Identifiable {
     }
 }
 
-struct ReviewsItem : Codable {
+struct ReviewsItem : Codable, Equatable {
     var title : String?
     var mdl_id : String?
     var poster_url : String?

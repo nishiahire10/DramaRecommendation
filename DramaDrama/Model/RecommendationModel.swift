@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Recommendations : Codable, Identifiable {
+struct Recommendations : Codable, Identifiable, Equatable {
+    static func == (lhs: Recommendations, rhs: Recommendations) -> Bool {
+        lhs.recommendation == rhs.recommendation
+    }
+    
     var id = UUID()
     var user : User
     var text : String
@@ -20,6 +24,15 @@ struct Recommendations : Codable, Identifiable {
         case user, text, likes, date, if_you_liked, recommendation
     }
     
+    init(user: User, text: String, likes: Int, date: String, if_you_liked: DramaOrMovie, recommendation: DramaOrMovie) {
+        self.user = user
+        self.text = text
+        self.likes = likes
+        self.date = date
+        self.if_you_liked = if_you_liked
+        self.recommendation = recommendation
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.user = try container.decode(User.self, forKey: .user)
@@ -29,9 +42,10 @@ struct Recommendations : Codable, Identifiable {
         self.if_you_liked = try container.decode(DramaOrMovie.self, forKey: .if_you_liked)
         self.recommendation = try container.decode(DramaOrMovie.self, forKey: .recommendation)
     }
+    
 }
 
-struct DramaOrMovie : Codable {
+struct DramaOrMovie : Codable, Equatable {
     var title : String
     var mdl_id : String
     var poster_url : String
