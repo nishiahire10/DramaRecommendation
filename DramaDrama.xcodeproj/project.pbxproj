@@ -14,13 +14,15 @@
 		3F2B831E2C52C2BE00CD6947 /* ReviewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B831D2C52C2BE00CD6947 /* ReviewsModel.swift */; };
 		3F2B83202C52C3D000CD6947 /* RecommendationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B831F2C52C3D000CD6947 /* RecommendationsViewModel.swift */; };
 		3F2B83222C52C3E600CD6947 /* ReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B83212C52C3E600CD6947 /* ReviewsViewModel.swift */; };
-		3F2B83242C52C3FE00CD6947 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B83232C52C3FE00CD6947 /* WebService.swift */; };
+		3F2B83242C52C3FE00CD6947 /* RecommendationWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B83232C52C3FE00CD6947 /* RecommendationWebService.swift */; };
+		3F64FB192C5553E0007234A7 /* ReviewsAPIFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64FB182C5553E0007234A7 /* ReviewsAPIFlowTests.swift */; };
 		3F772AEF2C53D9A800AAFA30 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F772AEE2C53D9A800AAFA30 /* ErrorHandler.swift */; };
+		3F772AF12C54FFA600AAFA30 /* RecommendationAPIFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F772AF02C54FFA600AAFA30 /* RecommendationAPIFlowTests.swift */; };
+		3F772AF62C55056900AAFA30 /* ReviewWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F772AF52C55056900AAFA30 /* ReviewWebService.swift */; };
 		3FD25C342C5280980049582F /* DramaDramaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C332C5280980049582F /* DramaDramaApp.swift */; };
 		3FD25C362C5280980049582F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C352C5280980049582F /* ContentView.swift */; };
 		3FD25C382C52809C0049582F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD25C372C52809C0049582F /* Assets.xcassets */; };
 		3FD25C3B2C52809C0049582F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD25C3A2C52809C0049582F /* Preview Assets.xcassets */; };
-		3FD25C452C52809D0049582F /* DramaDramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C442C52809D0049582F /* DramaDramaTests.swift */; };
 		3FD25C4F2C52809D0049582F /* DramaDramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C4E2C52809D0049582F /* DramaDramaUITests.swift */; };
 		3FD25C512C52809D0049582F /* DramaDramaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD25C502C52809D0049582F /* DramaDramaUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -50,8 +52,11 @@
 		3F2B831D2C52C2BE00CD6947 /* ReviewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsModel.swift; sourceTree = "<group>"; };
 		3F2B831F2C52C3D000CD6947 /* RecommendationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewModel.swift; sourceTree = "<group>"; };
 		3F2B83212C52C3E600CD6947 /* ReviewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewModel.swift; sourceTree = "<group>"; };
-		3F2B83232C52C3FE00CD6947 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		3F2B83232C52C3FE00CD6947 /* RecommendationWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationWebService.swift; sourceTree = "<group>"; };
+		3F64FB182C5553E0007234A7 /* ReviewsAPIFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsAPIFlowTests.swift; sourceTree = "<group>"; };
 		3F772AEE2C53D9A800AAFA30 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		3F772AF02C54FFA600AAFA30 /* RecommendationAPIFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationAPIFlowTests.swift; sourceTree = "<group>"; };
+		3F772AF52C55056900AAFA30 /* ReviewWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWebService.swift; sourceTree = "<group>"; };
 		3F82E9C02C53D2110096C765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3FD25C302C5280980049582F /* DramaDrama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DramaDrama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD25C332C5280980049582F /* DramaDramaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaDramaApp.swift; sourceTree = "<group>"; };
@@ -59,7 +64,6 @@
 		3FD25C372C52809C0049582F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD25C3A2C52809C0049582F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3FD25C402C52809D0049582F /* DramaDramaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DramaDramaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FD25C442C52809D0049582F /* DramaDramaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaDramaTests.swift; sourceTree = "<group>"; };
 		3FD25C4A2C52809D0049582F /* DramaDramaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DramaDramaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD25C4E2C52809D0049582F /* DramaDramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaDramaUITests.swift; sourceTree = "<group>"; };
 		3FD25C502C52809D0049582F /* DramaDramaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaDramaUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -95,7 +99,8 @@
 			children = (
 				3F2B831F2C52C3D000CD6947 /* RecommendationsViewModel.swift */,
 				3F2B83212C52C3E600CD6947 /* ReviewsViewModel.swift */,
-				3F2B83232C52C3FE00CD6947 /* WebService.swift */,
+				3F2B83232C52C3FE00CD6947 /* RecommendationWebService.swift */,
+				3F772AF52C55056900AAFA30 /* ReviewWebService.swift */,
 				3F772AEE2C53D9A800AAFA30 /* ErrorHandler.swift */,
 			);
 			path = ViewModel;
@@ -166,7 +171,8 @@
 		3FD25C432C52809D0049582F /* DramaDramaTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FD25C442C52809D0049582F /* DramaDramaTests.swift */,
+				3F772AF02C54FFA600AAFA30 /* RecommendationAPIFlowTests.swift */,
+				3F64FB182C5553E0007234A7 /* ReviewsAPIFlowTests.swift */,
 			);
 			path = DramaDramaTests;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 			files = (
 				3F2B83152C5282E100CD6947 /* ReviewView.swift in Sources */,
 				3F2B83172C529CEF00CD6947 /* DramaCellView.swift in Sources */,
+				3F772AF62C55056900AAFA30 /* ReviewWebService.swift in Sources */,
 				3FD25C362C5280980049582F /* ContentView.swift in Sources */,
 				3FD25C342C5280980049582F /* DramaDramaApp.swift in Sources */,
 				3F772AEF2C53D9A800AAFA30 /* ErrorHandler.swift in Sources */,
@@ -319,7 +326,7 @@
 				3F2B83222C52C3E600CD6947 /* ReviewsViewModel.swift in Sources */,
 				3F2B83202C52C3D000CD6947 /* RecommendationsViewModel.swift in Sources */,
 				3F2B831C2C52C13400CD6947 /* RecommendationModel.swift in Sources */,
-				3F2B83242C52C3FE00CD6947 /* WebService.swift in Sources */,
+				3F2B83242C52C3FE00CD6947 /* RecommendationWebService.swift in Sources */,
 				3F2B83132C5282D300CD6947 /* RecommendationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,7 +335,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD25C452C52809D0049582F /* DramaDramaTests.swift in Sources */,
+				3F772AF12C54FFA600AAFA30 /* RecommendationAPIFlowTests.swift in Sources */,
+				3F64FB192C5553E0007234A7 /* ReviewsAPIFlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

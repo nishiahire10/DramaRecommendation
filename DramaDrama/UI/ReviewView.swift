@@ -10,9 +10,12 @@ import SwiftUI
 struct ReviewView: View {
     @State private var selectedSegment = 0
     let segments = ["Recent", "Best", "Shows", "Movies"]
-    @ObservedObject var viewModel = ReviewsViewModel()
+    @ObservedObject var viewModel : ReviewsViewModel
     @State var category : String = "recent"
     
+    init(viewModel : ReviewsViewModel = ReviewsViewModel(networkService: ReviewsWebService())) {
+        self.viewModel = viewModel
+    }
     var body: some View {
         VStack {
             Picker("Segments", selection: $selectedSegment) {

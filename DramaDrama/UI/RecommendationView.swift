@@ -9,11 +9,14 @@ import SwiftUI
 
 struct RecommendationView: View {
     @State private var selectedSegment = 0
-    @ObservedObject var viewModel = RecommendationsViewModel()
+    @ObservedObject var viewModel : RecommendationsViewModel
     @State var category : String = "recent"
     let segments = ["Recent", "Shows", "Movies"]
 
-
+    init(viewModel: RecommendationsViewModel = RecommendationsViewModel(networkService: RecommendationWebService())) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
             VStack {
                 Picker("Category", selection: $selectedSegment) {
